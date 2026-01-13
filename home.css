@@ -182,3 +182,55 @@ footer{
   text-align:center;
   border-top:1px solid #eee;
 }
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #f6f1e8, #ffffff);
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #3b2d1f;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 24px 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(141, 54, 255, 0.25);
+}
+
+.contact-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #2b1e13;
+}
+
+.contact-card .role {
+  font-size: 14px;
+  color: #8d36ff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-card .phone {
+  font-size: 15px;
+  color: #444;
+}
