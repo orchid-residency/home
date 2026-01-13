@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orchid Residency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="orchid-logo.jpeg" type="image/jpeg" />
+</head>
+
+<body>
+
+  <!-- Video container (full-screen) -->
+  <div id="video-container">
+    <video id="intro-video" muted autoplay playsinline webkit-playsinline preload="auto" poster="orchid-logo.jpeg">
+      <source src="earth-journey.mp4" type="video/mp4" />
+      <source src="earth-journey.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-gradient"></div>
+  </div>
+
+  <!-- Title overlay shown after video ends -->
+  <div id="title-overlay" class="title-overlay" aria-hidden="true">
+    <div class="title-pill glass glass--dark"><span class="small">Welcome to</span><span class="big">ORCHID RESIDENCY</span></div>
+  </div>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=home.html">
+  </noscript>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

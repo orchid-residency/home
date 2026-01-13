@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orchid Residency — Registration</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="orchid-logo.jpeg" type="image/jpeg" />
+<link rel="stylesheet" href="home.css">
+
+<style>
+/* Page specific tweaks */
+.register-page{
+  background:#f6f1e8;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+.register-header{
+  padding:16px;
+  background:white;
+  border-bottom:1px solid #eee;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.register-header img{
+  width:40px;
+  border-radius:10px;
+}
+
+.register-title h1{
+  margin:0;
+  font-size:1rem;
+  color:#1f4d3a;
+}
+.register-title p{
+  margin:0;
+  font-size:0.75rem;
+  color:#777;
+}
+
+/* Form container */
+.form-wrapper{
+  flex:1;
+  padding:12px;
+  display:flex;
+}
+
+/* Responsive iframe */
+.form-frame{
+  width:100%;
+  border:none;
+  min-height:600px;
+  background:white;
+  border-radius:14px;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+/* Full height on mobile */
+@media(max-width:700px){
+  .form-wrapper{
+    padding:0;
+  }
+  .form-frame{
+    border-radius:0;
+    min-height:calc(100vh - 64px);
+  }
+}
+</style>
+</head>
+
+<body class="register-page">
+
+<header class="register-header">
+  <img src="orchid-logo.jpeg" alt="Orchid Residency">
+  <div class="register-title">
+    <h1>Orchid Residency</h1>
+    <p>Resident Registration</p>
+  </div>
+</header>
+
+<main class="form-wrapper">
+  <iframe
+    class="form-frame"
+    src="https://docs.google.com/forms/d/1cHRkM2FC_Khyw_3lUnMbGZTHP9rX2bKwiUdWUfTXbss/viewform?embedded=true"
+    allowfullscreen
+    loading="lazy"
+    title="Orchid Residency Registration Form">
+  </iframe>
+</main>
+
+</body>
+</html>
